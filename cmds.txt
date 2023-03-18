@@ -16,7 +16,7 @@ json-server db.json -m ./node_modules/json-server-auth
 --------------------------------------- Newman
 //go to dir where we exported our collection and environment:
 
-cd c:\users\emanmustafa\documents\PostmanIti\FinalProject
+cd ..\FinalProject
 
 //run project and generate HTML report using newman:
 
