@@ -1,0 +1,45 @@
+
+//open db.json file in visual studio code:
+
+cd documents\PostmanIti
+
+code .
+
+//set local server--> use json-server-auth as we need to use tokens: 
+
+json-server db.json -m ./node_modules/json-server-auth
+
+//take a nice tour in our Test in Postman
+
+//run collection manually using Postman.
+
+--------------------------------------- Newman
+//go to dir where we exported our collection and environment:
+
+cd c:\users\emanmustafa\documents\PostmanIti\FinalProject
+
+//run project and generate HTML report using newman:
+
+newman run collection.json -e environment.json -r htmlextra 
+
+----------------------------------------Jenkins
+//go to dir where Java JDK 11 exists to run jenkins using it:
+
+cd C:\Program Files\Java\jdk-11.0.16.1\bin\
+
+//start jenkins:
+
+java -jar jenkins.war
+
+//open localhost:8080 --> login
+//Dashboard --> build the project 
+//open workplace to find the report online 
+//open C:\Users\EmanMustafa\.jenkins\workspace to find the report locally
+-----------------------------------------
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP","")
+
+
+
+
+
+
